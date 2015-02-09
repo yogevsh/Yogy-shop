@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+    <head>
+      	<title>Yogy Shop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+
+	<!-- Bootstrap  -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+
+	<!-- My Css -->
+	<link href="css/index.css" rel="stylesheet" media="screen">
+	
+	
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    	<!--[if lt IE 9]>     		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+     	 	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+   	 <![endif]-->	
+    </head>
+
+    <body>
+
+	<div class="full-container">
+	
+ <!-- My Nav Bar    ------------------------>
+     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Yogy Shop</a>
+          </div>
+             
+          </div><!-- /.navbar-collapse -->
+        </nav> <!-- End of Nav Bar    ------------------------>
+		
+		<center>
+		<section id="mainContent">
+			
+		</section>
+		</center>
+		
+	</div>
+	
+	<!-- Templates -->
+	<script type="text/template" id="items-page-header-template">
+		<div class="item-view-header">
+		  <h3> Products List</h3>
+		  <span> Shopping Cart: <label class="items-counter"><%- counter %></label></span>
+		  <br>
+		   <a href="#checkout"> <button type="button" class="checkout-btn btn-warning">Checkout</button></a>
+		</div>
+	 </script> 
+	  
+	  <script type="text/template" id="item-template">
+		<div class="item-view"> 
+		  <div><label class="item-name"><%- name %></label></div>
+		  <div><label class="item-price">price: <%- price %>$</label></div>
+		  <button type="button" class="btn btn-primary buy-item-btn" >Buy</button>
+		  <button type="button" class="btn btn-danger remove-item-btn hidden" >Remove</button>
+		
+		</div>
+	  </script> 
+
+	 
+	 <script type="text/template" id="checkout-template">
+		<section id="registeration" class="row">
+		<div class="col-sm-3"></div>
+		<div id="regiser_form" class="col-sm-6">
+			<form class="form" method="post" action="#">
+			<h2>Checkout</h2>
+			<label>Name :</label>
+			<input type="text" name="dname" id="name">
+			<label>Email :</label>
+			<input type="text" name="demail" id="email">
+			<label>Password :</label>
+			<input type="password" name="password" id="password">
+			<label>Confirm Password :</label>
+			<input type="password" name="cpassword" id="cpassword">
+			<input type="button" name="done" id="done" value="Done">
+			<a href="#"> <button type="button" class="checkout-btn ">Back To Products List</button></a>
+			</form>
+		</div>
+		<div class="col-sm-3"></div>	
+	</section>	  
+	</script> 
+	
+  <!-- ========= -->
+  <!-- Libraries -->
+  <!-- ========= -->
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js" type="text/javascript"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.9/backbone-min.js" type="text/javascript"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	
+	<!-- index JS -->
+	<script src="js/index.js"></script>
+
+
+
+
+    </body>
+</html>
